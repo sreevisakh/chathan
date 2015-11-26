@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <form action="/commands" method="GET" role="form">
+            <legend>Commands</legend>
+            <div class="form-group">
+                <label for="">Enter Command</label>
+                <input type="text" name="key" class="form-control" id="" placeholder="Enter Command" value="<%=key%>">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <label for="input" class="col-sm-2"></label>
+        <textarea name="" id="input" class="form-control" rows="3" required="required" style="min-height:300px;">
+            <%=output%>
+        </textarea>
+    </div>
+    <div class="row">
+        <div class="col-md-2"><a href="/commands?key=service apache2 restart">Apache Restart</a></div>
+        <div class="col-md-2"><a href="/commands?key=service network-manager restart">Network Restart</a></div>
+        <div class="col-md-2"><a href="/commands?key=whoami">Who Am I?</a></div>
+        <div class="col-md-2"><a href="/commands?key=date">Date</a></div>
+    </div>
+</body>
+
+</html>

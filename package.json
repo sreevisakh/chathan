@@ -1,0 +1,20 @@
+{
+  "name": "chathan",
+  "version": "1.0.0",
+  "description": "Chathan kudi",
+  "main": "app.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "author": "Sreevisakh",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.3.4",
+    "errorhandler": "^1.4.2",
+    "express": "^4.13.3",
+    "morgan": "^1.6.1",
+    "q": "^1.4.1",
+    "serve-favicon": "^2.3.0",
+    "sudo": "^1.0.3"
+  }
+}
